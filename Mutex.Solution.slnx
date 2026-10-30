@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="Mutex.DataLayer/Mutex.DataLayer.csproj" />
+  <Project Path="Mutex.Presentation/Mutex.Presentation.csproj" />
+  <Project Path="Mutex.ServiceLayer/Mutex.ServiceLayer.csproj" />
+</Solution>

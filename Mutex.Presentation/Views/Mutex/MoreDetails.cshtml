@@ -1,0 +1,52 @@
+﻿@model Mutex.Presentation.Models.Employees
+
+
+<h2>Employee Details</h2>
+<a asp-action="Show">Back To List</a>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                EmpID
+            </th>
+            <th>
+                EmpName
+            </th>
+            <th>
+                EmpDesignation
+            </th>
+            <th>
+                EmpDept
+            </th>
+            <th>
+                EmpSalary
+            </th>
+            <th>
+                EmpAge
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                @Model.EmpId
+            </td>
+            <td>
+                @Model.EmpName
+            </td>
+            <td>
+                @Model.EmpDesignation
+            </td>
+            <td>
+                @Model.EmpDept
+            </td>
+            <td>
+                @Model.EmpSalary
+            </td>
+            <td>
+                @Model.EmpAge
+            </td>
+        </tr>
+    </tbody>
+</table>

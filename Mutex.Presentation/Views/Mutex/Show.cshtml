@@ -1,0 +1,36 @@
+﻿@model List<Mutex.Presentation.Models.Employees>
+
+
+<h2>All Employee Details</h2>
+
+<table class="table table-bordered table-striped table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                EmpID
+            </th>
+            <th>
+                EmpName
+            </th>
+            <th>
+                Details
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var emp in Model)
+        {
+            <tr>
+                <td>
+                    @emp.EmpId
+                </td>
+                <td>
+                    @emp.EmpName
+                </td>
+                <td>
+                    <a asp-action="MoreDetails" asp-route-id=@emp.EmpId>Show More</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
